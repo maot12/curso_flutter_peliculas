@@ -33,7 +33,6 @@ class DetailsScreen extends StatelessWidget {
 
 class _CustomAppBar extends StatelessWidget {
 
-
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
@@ -58,7 +57,7 @@ class _CustomAppBar extends StatelessWidget {
 
         background: const FadeInImage(
           placeholder: AssetImage('assets/loading.gif'),
-          image: NetworkImage('https://placehold.jp/3d4070/ffffff/150x150.png'),
+          image: NetworkImage('https://placehold.jp/3d4070/ffffff/500x300.png'),
           fit: BoxFit.cover,
         ),
       ),
@@ -89,7 +88,7 @@ class _PosterAndTitle extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
             child: const FadeInImage(
               placeholder: AssetImage('assets/no-image.jpg'),
-              image: NetworkImage('https://placehold.jp/3d4070/ffffff/150x150.png'),
+              image: NetworkImage('https://placehold.jp/3d4070/ffffff/200x300.png'),
               height: 150,
             ),
           ),

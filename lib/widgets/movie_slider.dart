@@ -20,7 +20,6 @@ class MovieSlider extends StatefulWidget {
 
 class _MovieSliderState extends State<MovieSlider> {
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,10 +29,9 @@ class _MovieSliderState extends State<MovieSlider> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
 
-
             const Padding(
               padding: EdgeInsets.symmetric( horizontal: 20 ),
-              child: Text('text', style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold ),),
+              child: Text('Populares', style: TextStyle( fontSize: 20, fontWeight: FontWeight.bold ),),
             ),
 
           const SizedBox( height: 5 ),
@@ -70,7 +68,7 @@ class _MoviePoster extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               child: const FadeInImage(
                 placeholder: AssetImage('assets/no-image.jpg'),
-                image: NetworkImage('https://placehold.jp/3d4070/ffffff/150x150.png'),
+                image: NetworkImage('https://placehold.jp/3d4070/ffffff/300x400.png'),
                 width: 130,
                 height: 190,
                 fit: BoxFit.cover,
@@ -81,7 +79,7 @@ class _MoviePoster extends StatelessWidget {
           const SizedBox( height: 5 ),
 
           const Text(
-            'movie.title',
+            'Star Wars: El Retorno de el nuevo Jedi de Sauron',
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
